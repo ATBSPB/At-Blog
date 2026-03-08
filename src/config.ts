@@ -98,7 +98,7 @@ export const profileConfig: ProfileConfig = {
 	// 姓名
 	name: "ATBSPB",
 	// 个人简介
-	bio: "The only way to do great  is to love what you do.",
+	bio: "整天半吊子和不学无术的坏孩子 梦想成为一个好人.....",
 	// 社交链接
 	links: [
 		{
