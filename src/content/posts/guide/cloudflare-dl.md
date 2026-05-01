@@ -53,7 +53,7 @@ draft: false
   ![](https://photo.atbspb.online/index.php?mod=io\&op=getStream\&path=UmZ3dHR0aVpaRFluQWJST3Q0TmRBOVNBNlZwQkoxRHhRSVgwYzJJcjhaNDV3QXU2dTFZTk1ZRjlGT1ZOOGxIWUEyZk1kRi0wRVJWWWQwV1R3NlI4ZUNUdkFvVldjMHpNd0Z2XzF1Vk81MWxiQ0pCSWMtS2tMYmRWVkdaTEYxTjNiVmtjc2tMUTZVanBvT2ZodWl5bDlwa3E)
 
   然后创建Pages,在Cloudflare侧边导航栏找到：计算 - Workers 和 Pages，点击"创建应用程序"。
-  ![](https://photo.atbspb.online/index.php?mod=io\&op=getStream\&path=UlBzcXNkNmRaamNpQkxFWjRJWUxBdGFCc0Z4TWRsQ2pRTlAwYzJJcjhaNHU3Z201cTBsVUpiaDFGUEpqLVFuYVBuT0dkMC04RVFCeFowdVM2cUI2ZVJuc1haSWVjMHZNd0VfXzF1Vk81MWxiQ0pCSWMtSzBJYlZWVkdaTEYxTjNiV2cwX0I3STdWTG1fc2ZaNlNz)
+  ![](https://photo.atbspb.online/index.php?mod=io&op=getStream&path=UlBzcXNkNmNaekFpQkxFWjRJWUxBdGFCc0Z4TWRsQ2pRTlAwYzJJcjhaNHU3Z201cTBsVUpiaDFGUEpqLVFuYVBuT0dkMC04RVFCeFowdVM2cUI2ZVJuc1haSWVjMHZNd0VfXzF1Vk81MWxiQ0pCSWMtSzBJYlZWVkdaTEYxTjNiV2cwX0I3STdWTG1fc2ZaNlNz)
 
   点击下方的 "开始使用"。
   ![](https://photo.atbspb.online/index.php?mod=io\&op=getStream\&path=UlBzcXNkNmRaamNoQWVSRXM5UU9BWWJXNWw4WElGZjNFdHYwYzJJcjhZZ0EwQXV0NDFWV0pyaDZCdkpPN2xIUEUxNlVkMS1hRWhaUGFGV1MtcVI1ZVNmNFhwRXdkQlhNMDFQXzF1Vk81MWxiQ0pCSWMtSzBJYlZWVkdaTEYxTjNiV2cwX0I3STdWTG1fc2ZaNlNz)
