@@ -56,7 +56,7 @@ draft: false
   ![](https://photo.atbspb.online/index.php?mod=io&op=getStream&path=UlBzcXNkNmNaekFpQkxFWjRJWUxBdGFCc0Z4TWRsQ2pRTlAwYzJJcjhaNHU3Z201cTBsVUpiaDFGUEpqLVFuYVBuT0dkMC04RVFCeFowdVM2cUI2ZVJuc1haSWVjMHZNd0VfXzF1Vk81MWxiQ0pCSWMtSzBJYlZWVkdaTEYxTjNiV2cwX0I3STdWTG1fc2ZaNlNz)
 
   点击下方的 "开始使用"。
-  ![](https://photo.atbspb.online/index.php?mod=io\&op=getStream\&path=UlBzcXNkNmRaamNoQWVSRXM5UU9BWWJXNWw4WElGZjNFdHYwYzJJcjhZZ0EwQXV0NDFWV0pyaDZCdkpPN2xIUEUxNlVkMS1hRWhaUGFGV1MtcVI1ZVNmNFhwRXdkQlhNMDFQXzF1Vk81MWxiQ0pCSWMtSzBJYlZWVkdaTEYxTjNiV2cwX0I3STdWTG1fc2ZaNlNz)
+  ![](https://photo.atbspb.online/index.php?mod=io&op=getStream&path=UlBzcXNkNmNZRFlrQk9SRXM5UU9BWWJXNWw4WElGZjNFdHYwYzJJcjhZZ0EwQXV0NDFWV0pyaDZCdkpPN2xIUEUxNlVkMS1hRWhaUGFGV1MtcVI1ZVNmNFhwRXdkQlhNMDFQXzF1Vk81MWxiQ0pCSWMtSzBJYlZWVkdaTEYxTjNiV2cwX0I3STdWTG1fc2ZaNlNz)
 
   项目名称可以随意填写，然后上传 edgetunnel 的源码。源码可以在文章开头的 github 项目中找到。也可以在这里直接下载，但由于文章不实时更新，所以尽量保证是最新版本。
 
