@@ -22,7 +22,7 @@ export const siteConfig: SiteConfig = {
 	themeColor: {
 		// 主题颜色的默认色相值，范围从 0 到 360
 		// 例如：红色: 0, 青色: 200, 蓝绿色: 250, 粉色: 345
-		hue: 275,
+		hue: 250,
 		// 是否固定主题颜色，隐藏主题颜色选择器
 		fixed: false,
 	},
