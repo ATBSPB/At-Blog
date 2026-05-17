@@ -32,7 +32,7 @@ lang: zh-CN
 3. 按照提示将 Cloudflare 提供的 DNS 名称服务器地址更新到你的域名注册商
 4. 等待生效后，域名即成功托管
 
-![域名托管](./images/域名托管.png)
+![域名托管](./images/Domain%20Hosting.png)
 
 > 也可使用阿里云、腾讯云等 DNS 服务。
 
@@ -44,13 +44,13 @@ lang: zh-CN
 
 Cloudflare 导航栏：**存储和数据库** > **Worker KV**，创建 KV 空间，名称随意。
 
-![创建 KV 空间](./images/创建%20KV%20空间.png)
+![创建 KV 空间](./images/Create%20KV%20space.png)
 
 #### 2. 创建 Pages
 
 Cloudflare 导航栏：**计算** > **Workers 和 Pages** > **创建应用程序**，点击下方的 **开始使用**
 
-![创建 Pages](./images/创建%20Pages.png)
+![创建 Pages](./images/Create%20Pages.png)
 
 - 项目名称随意填写
 - 上传 edgetunnel 源码：
