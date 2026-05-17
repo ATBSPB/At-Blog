@@ -111,6 +111,11 @@ export const profileConfig: ProfileConfig = {
 			url: "mailto:atbspb@qq.com",
 		},
 		{
+			name: "GitHub",
+			icon: "mdi:github",
+			url: "https://github.com/ATBSPB",
+		},
+		{
 			name: "Steam",
 			icon: "fa7-brands:steam-symbol",
 			url: "https://steamcommunity.com/id/atbspb/",
