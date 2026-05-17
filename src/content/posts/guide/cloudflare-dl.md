@@ -5,6 +5,7 @@ description: 永久可用+免费域名｜10分钟搭建｜详细教程
 tags: [Cloudflare, 代理, 开源]
 category: 技术分享
 draft: false
+lang: zh-CN
 ---
 
 <a id="github"></a>

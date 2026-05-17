@@ -6,4 +6,12 @@
     .title {
         font-family: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
+
+    pre {
+        color: oklch(0.55 0.12 250) !important;
+    }
+
+    span:not(.line) {
+        color: oklch(0.55 0.12 250) !important;
+    }
 }
