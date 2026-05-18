@@ -116,5 +116,5 @@ Owo.O00o.Ooo
 
 | 系统 | 软件 |
 |------|------|
-| Windows | [V2rayN](https://atr2.atbspb.online/v2rayN-windows-64.zip) / [Clash.Verge](https://atr2.atbspb.online/Clash.Verge_2.4.7_x64-setup.exe) |
+| Windows | [V2rayN](https://atr2.atbspb.online/v2rayN-windows-64.zip) / [Clash.Verge](https://atr2.atbspb.online/Clash.Verge_2.5.0-rc_x64-setup.exe) |
 | Android | [V2rayNG](https://atr2.atbspb.online/v2rayNG_2.1.7_x86_64.apk) / [NekoBox](https://atr2.atbspb.online/NekoBox-1.4.2-x86_64.apk) |
