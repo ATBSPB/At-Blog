@@ -55,7 +55,7 @@ Cloudflare 导航栏：**计算** > **Workers 和 Pages** > **创建应用程序
 - 项目名称随意填写
 - 上传 edgetunnel 源码：
 
- >源码地址：[GitHub](#github) / [点击下载](https://disk.atbspb.online/f/8PI7/edgetunnel-main.zip)</br>
+ >源码地址：[GitHub](#github) / [点击下载](https://atr2.atbspb.online/edgetunnel.zip)</br>
 
 #### 3. 配置自定义域
 
@@ -116,5 +116,5 @@ Owo.O00o.Ooo
 
 | 系统 | 软件 |
 |------|------|
-| Windows | [V2rayN](https://disk.atbspb.online/f/KEfw/v2rayN-windows-64.zip) / [Clash.Verge](https://disk.atbspb.online/f/NNuO/Clash.Verge_2.4.7_x64-setup.exe) |
-| Android | [V2rayNG](https://disk.atbspb.online/f/EWc5/v2rayNG_2.1.4_x86_64.apk) / [NekoBox](https://disk.atbspb.online/f/2mUW/NekoBox-1.4.2-x86_64.apk) |
+| Windows | [V2rayN](https://atr2.atbspb.online/v2rayN-windows-64.zip) / [Clash.Verge](https://atr2.atbspb.online/Clash.Verge_2.4.7_x64-setup.exe) |
+| Android | [V2rayNG](https://atr2.atbspb.online/v2rayNG_2.1.7_x86_64.apk) / [NekoBox](https://atr2.atbspb.online/NekoBox-1.4.2-x86_64.apk) |
