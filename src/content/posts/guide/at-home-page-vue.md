@@ -21,11 +21,11 @@ At - Home Page - Vue | 一个基于 [zyyo主页](https://zyyo.net/44.html)，用
 ```
 www - VUE/
 ├── public/                     # 静态资源目录
-│   └── static/
+│   └── static/                # 静态文件
 │       ├── fonts/              # 字体文件
 │       ├── img/                # 图片文件
 │       └── svg/                # SVG 图标
-├── src/
+├── src/                        # 源代码目录
 │   ├── components/             # Vue 组件
 │   ├── composables/            # 组合式函数
 │   ├── utils/                  # 工具函数
@@ -33,9 +33,11 @@ www - VUE/
 │   ├── main.js                 # 入口文件
 │   └── style.css               # 全局样式（主题配置）
 ├── index.html                  # HTML 模板
-├── package.json                # 项目依赖
+├── package.json                # 项目依赖配置
 ├── vite.config.js              # Vite 配置
-└── README.md                   # 项目说明
+├── wrangler.toml               # Cloudflare Pages 部署配置
+├── LICENSE                     # MIT 许可证
+└── README.md                   # 项目说明文档
 ```
 
 ## 技术栈
@@ -48,6 +50,16 @@ www - VUE/
 
 项目支持 **Light** 和 **Dark** 双主题，通过 `data-theme` 属性切换。
 
+主题配置在 `src/style.css` 中使用 CSS 变量定义，关键变量位置如下：
+
+| 设置项 | 变量名 | Light 行号 | Dark 行号 |
+|--------|--------|-----------|----------|
+| 主背景颜色 | `--main_bg_color` | 79 | 98 |
+| 主文字颜色 | `--main_text_color` | 80 | 99 |
+| 模块背景颜色 | `--item_bg_color` | 84 | 103 |
+| 背景滤镜模糊 | `--back_filter` | 91 | 110 |
+| 背景遮罩颜色 | `--back_filter_color` | 92 | 111 |
+
 ### Light 主题（默认）
 
 ```css
@@ -55,9 +67,18 @@ www - VUE/
   --main_bg_color: url(/static/img/bz-light.jpg);
   --main_text_color: #ffffff;
   --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
+  --purple_text_color: #747bff;
+  --text_bg_color: rgba(180, 200, 230, 0.5);
   --item_bg_color: rgba(235, 240, 250, 0.25);
+  --item_hover_color: rgba(225, 235, 250, 0.4);
+  --item_left_title_color: #ffffff;
+  --item_left_text_color: #ffffff;
+  --footer_text_color: #ffffff;
+  --left_tag_item: rgba(235, 240, 250, 0.35);
+  --card_filter: 0px;
   --back_filter: 20px;
   --back_filter_color: rgba(0, 0, 0, 0.17);
+  --fill: #ffffff;
 }
 ```
 
@@ -68,9 +89,18 @@ www - VUE/
   --main_bg_color: url(/static/img/bz-dark.jpg);
   --main_text_color: #fff;
   --gradient: linear-gradient(120deg, rgb(133, 62, 255), #f76cc6 30%, rgb(255, 255, 255) 60%);
+  --purple_text_color: #747bff;
+  --text_bg_color: rgba(26, 4, 48, 0.5);
   --item_bg_color: rgba(19, 20, 24, 0.35);
+  --item_hover_color: rgba(19, 23, 27, 0.55);
+  --item_left_title_color: #ffffff;
+  --item_left_text_color: #ffffff;
+  --footer_text_color: #ffffff;
+  --left_tag_item: rgba(19, 20, 24, 0.35);
+  --card_filter: 0px;
   --back_filter: 20px;
   --back_filter_color: rgba(0, 0, 0, 0.55);
+  --fill: #ffffff;
 }
 ```
 
@@ -86,49 +116,46 @@ function toggleTheme() {
 }
 ```
 
-## 组件架构
+### 壁纸设置
 
-| 组件 | 功能 | 自定义内容 |
-|------|------|-----------|
-| **LeftSidebar** | 左侧侧边栏 | 个人描述、标签列表、时间线 |
-| **PageHeader** | 页面头部 | 欢迎语、图标链接列表 |
-| **PageContent** | 页面内容 | 项目站点数据 |
-| **PageFooter** | 页面底部 | 版权信息、底部链接 |
-| **ThemeToggle** | 主题切换按钮 | 切换按钮样式 |
+背景图片样式在 `src/style.css` 中配置：
 
-## 自定义配置
-
-### 修改壁纸
-
-替换 `public/static/img/` 目录下的图片：
-- `bz-light.jpg` — Light 主题壁纸
-- `bz-dark.jpg` — Dark 主题壁纸
-
-### 修改主题颜色
-
-编辑 `src/style.css` 中的 CSS 变量，找到对应的主题区块修改即可。
-
-### 添加新组件
-
-在 `src/components/` 目录下创建 `.vue` 文件，然后在 `App.vue` 中导入使用：
-
-```vue
-<template>
-  <div>
-    <LeftSidebar />
-    <div class="at-right">
-      <PageHeader />
-      <PageContent />
-      <NewComponent />
-    </div>
-  </div>
-</template>
-
-<script setup>
-import LeftSidebar from './components/LeftSidebar.vue'
-import NewComponent from './components/NewComponent.vue'
-</script>
+```css
+body {
+  background: var(--main_bg_color);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top center;
+  background-attachment: fixed;
+  transition: color 0.1s ease;
+  color: var(--main_text_color);
+}
 ```
+
+## 模块修改位置
+
+| 模块 | 文件 | 可修改内容 | 行号 |
+|------|------|-----------|------|
+| 左侧侧边栏 | `LeftSidebar.vue` | 个人描述文字 | 35 |
+| 左侧侧边栏 | `LeftSidebar.vue` | 标签列表 | 46-51 |
+| 左侧侧边栏 | `LeftSidebar.vue` | 时间线数据 | 54-75 |
+| 页面头部 | `PageHeader.vue` | 欢迎语 | 30 |
+| 页面头部 | `PageHeader.vue` | 图标链接列表 | 33-54 |
+| 页面内容 | `PageContent.vue` | 项目站点数据 | 65-70 |
+| 页面底部 | `PageFooter.vue` | 版权信息/底部链接 | 4-8 |
+| 页面底部 | `PageFooter.vue` | 滚动渐显效果 | 16-38 |
+| 主题切换 | `ThemeToggle.vue` | 切换按钮样式 | 21-38 |
+| 根组件 | `App.vue` | 主题切换逻辑 | 48-52 |
+| 根组件 | `App.vue` | 控制台输出/彩蛋 | 65-73 |
+| 根组件 | `App.vue` | 右键菜单禁用 | 75-77 |
+| 根组件 | `App.vue` | FPS 显示 | 79-109 |
+
+## 工具函数
+
+| 文件 | 说明 |
+|------|------|
+| `src/utils/cookie.js` | Cookie 读写操作 |
+| `src/composables/usePopup.js` | 弹窗事件管理 |
 
 ## 快速开始
 
@@ -146,3 +173,24 @@ npm run build
 npm run preview
 ```
 
+### Cloudflare 部署
+
+项目已配置 `wrangler.toml`，支持以下部署方式：
+
+**方式一：Cloudflare Pages**
+
+```bash
+npm run build
+npx wrangler pages deploy dist
+```
+
+**方式二：Cloudflare Workers**
+
+```bash
+npm run build
+npx wrangler deploy
+```
+
+## 许可证
+
+MIT License
