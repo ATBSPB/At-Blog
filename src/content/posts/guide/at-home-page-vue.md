@@ -1,7 +1,7 @@
 ---
 title: 开源 ATBSPB-个人主页
 published: 2026-05-17
-description: At - Home Page - Vue|基于 zyyo 主页，使用 Vue 3 + Vite 重构的个人主页项目，支持 Light/Dark 双主题切换
+description: At - Home Page - Vue | 基于 zyyo 主页，使用 Vue 3 + Vite 重构的个人主页项目，支持 Light/Dark 双主题切换
 tags: [Vue/Vite, 个人主页, 开源]
 category: 技术分享
 draft: false 
