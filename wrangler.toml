@@ -10,11 +10,9 @@ compatibility_date = "2026-05-01"
 [vars]
   NODE_ENV = "production"
 
-# Pages deployment config
 [pages]
   output_dir = "dist"
   compatible_date = "2026-05-01"
 
-# Environment variables (optional - you can set these in Cloudflare Dashboard)
 [env.production]
   name = "atbspb-blog"
