@@ -10,9 +10,8 @@ compatibility_date = "2026-05-01"
 [vars]
   NODE_ENV = "production"
 
-[pages]
-  output_dir = "dist"
-  compatible_date = "2026-05-01"
+[assets]
+  directory = "./dist"
 
 [env.production]
   name = "atbspb-blog"
