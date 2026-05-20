@@ -1,31 +1,20 @@
-name = "at-blog"
-type = "pages"
+#:schema node_modules/wrangler/config-schema.json
+
+name = "atbspb-blog"
+compatibility_date = "2026-05-01"
 
 [build]
-command = "pnpm build"
-publish = "dist"
+  command = "pnpm build"
+  cwd = "."
 
-[env]
-NODE_ENV = "production"
+[vars]
+  NODE_ENV = "production"
 
-[site]
-bucket = "./dist"
-entry-point = "workers-site"
-
+# Pages deployment config
 [pages]
-project_name = "at-blog"
-production_branch = "main"
+  output_dir = "dist"
+  compatible_date = "2026-05-01"
 
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-
-[[headers]]
-source = "/*"
-headers = [
-    { key = "X-Content-Type-Options", value = "nosniff" },
-    { key = "X-Frame-Options", value = "DENY" },
-    { key = "X-XSS-Protection", value = "1; mode=block" },
-    { key = "Content-Security-Policy", value = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https:" }
-]
+# Environment variables (optional - you can set these in Cloudflare Dashboard)
+[env.production]
+  name = "atbspb-blog"
